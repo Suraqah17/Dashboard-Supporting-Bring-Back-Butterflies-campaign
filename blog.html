@@ -1,0 +1,105 @@
+<html>
+	<head>
+		<title>BBB</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.css">
+		<link rel="stylesheet" href="style.css">
+        </head>
+	<body>
+        <section class="header">
+            <nav>
+                <a href="index.html"><img src="https://lh3.googleusercontent.com/CTYbjGWscYo8oCddivK_TP8rl8Ok-DZhWmfEYsznH-QaYsfk0EmTgPr8MeRiRyluXYMP89s4BhVVVw650BNAFStgAmzBpf8=s340" alt="ExploreiT"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About us</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <div class="text-box">
+                <h1>Butterfly conservation</h1>
+            </div>
+        </section>
+        <section class="blog-content">
+            <div class="row">
+                <div class="blog-left">
+                    <img src="images/lander-bg.jpg">
+                    <h2>Butterfly conservation</h2>
+                    <p>Butterfly conservation is a crucial component of global biodiversity preservation and environmental stewardship.
+                        These delicate and charismatic insects play essential roles in ecosystems as pollinators and indicators of 
+                        environmental health. Conservation efforts are focused on safeguarding their populations, habitats, and the 
+                        broader ecological systems they inhabit. Without adequate protection, many butterfly species face the risk of 
+                        extinction due to habitat destruction, climate change, and other human-induced threats.
+                    </p>
+                    <br/>
+                    <p>One of the primary goals of butterfly conservation is the preservation and restoration of butterfly habitats. 
+                        These include wildflower-rich meadows, woodlands, and wetlands that serve as crucial nectar sources and breeding 
+                        grounds for various butterfly species. Conservationists work to identify key habitats, implement sustainable 
+                        land management practices, and establish protected areas to ensure that butterflies have access to these vital 
+                        environments. Moreover, reducing the use of pesticides and herbicides in agriculture and landscaping is imperative 
+                        to safeguard butterfly populations, as these chemicals can have devastating effects on their larvae and adult stages.
+                    </p>
+                    <br/>
+                    <p>Education and public awareness also play a pivotal role in butterfly conservation. Through educational programs, 
+                        outreach, and citizen science initiatives, people are encouraged to understand the significance of butterflies 
+                        and their contributions to our ecosystems. Engaging communities in conservation efforts, such as butterfly-
+                        friendly gardening and habitat restoration projects, helps raise awareness and foster a sense of responsibility 
+                        for protecting these remarkable insects. By collectively supporting butterfly conservation, we can not only 
+                        ensure the survival of these beautiful creatures but also promote the health and sustainability 
+                        of our environment as a whole.
+                    </p>
+                    <div class="comment-box">
+                        <h3>Leave a comment</h3>
+                        <form class="comment-form">
+                            <input type="text" placeholder="Enter Name">
+                            <input type="email" placeholder="Enter Email">
+                            <textarea rows="5" placeholder="Your comment"></textarea>
+                            <button type="submit" class="hero-btn red-btn">POST COMMENT</button>
+                        </form>
+                    </div>
+                </div> 
+                
+                <div class="blog-right">
+                    <h3>Post categories</h3>
+                    <div>
+                        <span>Category 1</span>
+                        <span>21</span>
+                    </div>
+                    <div>
+                        <span>Category 2</span>
+                        <span>17</span>
+                    </div>
+                    <div>
+                        <span>Category 3</span>
+                        <span>5</span>
+                    </div>
+                    <div>
+                        <span>Category 4</span>
+                        <span>1</span>
+                    </div>
+                    <div>
+                        <span>Category 5</span>
+                        <span>13</span>
+                    </div>
+                    <div>
+                        <span>Category 6</span>
+                        <span>19</span>
+                    </div>
+                </div>
+            </section>
+                
+        <!--javascript for toggle menu-->
+        <script>
+            var navLinks=document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right = "0px";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px"
+            }
+        </script>
+	</body>
+</html>
